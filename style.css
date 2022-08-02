@@ -27,3 +27,13 @@
 .azul {
     background-color: #bde0fe;
 }
+#pixel-board {
+    width: 30%;
+}
+.pixel {
+    display:inline-grid;
+    grid-template-columns: auto;
+    padding: 35px;
+    border: 1px solid black;
+    background-color: white;
+}
