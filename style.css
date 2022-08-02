@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+.color {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 10px;
+    margin: 2px;
+}
+ .azul {
+    background-color: #bde0fe;
+}
+.rosa {
+    background-color: #ffafcc;
+}
+.roxo {
+    background-color: #e7c6ff;
+}
+.verde {
+    background-color: #d0f4de;
+}
