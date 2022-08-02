@@ -42,7 +42,7 @@ h1 {
   display: grid;
   grid-template-columns: 1px 1px 1px 1px 1px;
   grid-column-gap:40px;
-  justify-content: center;
+  justify-content:center;
 }
 .pixel {
   border: 1px solid black;
