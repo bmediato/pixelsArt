@@ -10,13 +10,22 @@ for (let index = 1; index <= 25; index += 1) {
 }
 criandoFilho ();
 
-const corPreta = document.getElementsByClassName('preto')[0];
-const corRosa = document.getElementsByClassName('rosa')[0];
-const corRoxo = document.getElementsByClassName('roxo')[0];
-const corAzul = document.getElementsByClassName('azul')[0];
+const corPreta = document.getElementById('preto');
+const corRosa = document.getElementById('rosa');
+const corRoxo = document.getElementById('roxo');
+const corAzul = document.getElementById('azul');
 
-window.onload = corPreta.addEventListener('click', function () {
-    corPreta.classList.remove('color');
-    corPreta.classList.add('selected');
-    corPreta.classList.add('color');
-})
+window.onload = function () {
+  corPreta.classList.remove('color');
+  corPreta.classList.add('selected');
+  corPreta.classList.add('color');
+}
+
+function clicouNoRosa (evento) {
+let corClicada = evento.target.className
+}
+clicouNoRosa ();
+corPreta.addEventListener('click', clicouNoPreto);
+corRosa.addEventListener('click', clicouNoRosa);
+corRoxo.addEventListener('click',clicouNoRoxo);
+corAzul.addEventListener('click', clicouNoAzul);

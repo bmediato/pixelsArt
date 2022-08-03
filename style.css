@@ -22,19 +22,19 @@ h1 {
   margin-bottom: 8px;
 }
 
-.preto {
+#preto {
   background-color: black;
 }
 
-.rosa {
+#rosa {
   background-color: #ffafcc;
 }
 
-.roxo {
+#roxo {
   background-color: #e7c6ff;
 }
 
-.azul {
+#azul {
   background-color: #bde0fe;
 }
 
