@@ -1,19 +1,21 @@
 * {
   margin: 0;
   padding: 0;
-
 }
+
 h1 {
-  background-color:#a2d2ff;
+  background-color: #a2d2ff;
   text-align: center;
   padding: 10px;
 }
+
 #color-palette {
   display: grid;
   grid-template-columns: 1px 1px 1px 1px;
   grid-column-gap: 50px;
   justify-content: center;
 }
+
 .color {
   border: 1px solid black;
   padding: 15px;
@@ -41,9 +43,10 @@ h1 {
 #pixel-board {
   display: grid;
   grid-template-columns: 1px 1px 1px 1px 1px;
-  grid-column-gap:40px;
-  justify-content:center;
+  grid-column-gap: 40px;
+  justify-content: center;
 }
+
 .pixel {
   border: 1px solid black;
   background-color: white;

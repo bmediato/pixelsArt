@@ -1,4 +1,3 @@
-
 function criandoFilho () {
 const pai = document.querySelector('#pixel-board');
 
@@ -10,22 +9,10 @@ for (let index = 1; index <= 25; index += 1) {
 }
 criandoFilho ();
 
-const corPreta = document.getElementById('preto');
-const corRosa = document.getElementById('rosa');
-const corRoxo = document.getElementById('roxo');
-const corAzul = document.getElementById('azul');
-
 window.onload = function () {
+  const corPreta = document.getElementById('preto');
   corPreta.classList.remove('color');
   corPreta.classList.add('selected');
   corPreta.classList.add('color');
 }
 
-function clicouNoRosa (evento) {
-let corClicada = evento.target.className
-}
-clicouNoRosa ();
-corPreta.addEventListener('click', clicouNoPreto);
-corRosa.addEventListener('click', clicouNoRosa);
-corRoxo.addEventListener('click',clicouNoRoxo);
-corAzul.addEventListener('click', clicouNoAzul);
