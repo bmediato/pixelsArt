@@ -10,17 +10,15 @@ function criandoFilho() {
 criandoFilho();
 
 const corPreta = document.getElementById('preto');
-const corRosa = document.getElementById('rosa');
-const corRoxo = document.getElementById('roxo');
-const corAzul = document.getElementById('azul');
 
 window.onload = function () {
   corPreta.classList.remove('color');
   corPreta.classList.add('selected');
   corPreta.classList.add('color');
-}
+};
 
 const cores = document.querySelectorAll('.color');
+const pixel = document.querySelectorAll('.pixel');
 
 function selectColor(evento) {
   for (let index = 0; index < cores.length; index += 1) {
@@ -28,7 +26,22 @@ function selectColor(evento) {
   }
   evento.target.classList.add('selected');
 }
-
 for (let index = 0; index < cores.length; index += 1) {
   cores[index].addEventListener('click', selectColor);
 }
+
+function corClicadaNaPaleta(evento) {
+  const corSelected = document.querySelector('.selected').style.backgroundColor;
+  evento.target.style.backgroundColor = corSelected;
+}
+
+for (let index = 0; index < pixel.length; index += 1) {
+  pixel[index].addEventListener('click', corClicadaNaPaleta);
+}
+
+const button = document.querySelector('#clear-board');
+button.addEventListener('click', function () {
+  if (pixel.style.backgroundColor !== 'white') {
+    pixel.style.backgroundColor = 'white';
+  }
+});
