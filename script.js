@@ -18,7 +18,6 @@ window.onload = function AdicionaSelected() {
 };
 
 const cores = document.querySelectorAll('.color');
-const pixel = document.getElementById('pixel-board');
 
 function selectColor(evento) {
   for (let index = 0; index < cores.length; index += 1) {
