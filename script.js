@@ -18,7 +18,7 @@ window.onload = function AdicionaSelected() {
 };
 
 const cores = document.querySelectorAll('.color');
-const pixel = document.querySelectorAll('.pixel');
+const pixel = document.getElementById('pixel-board');
 
 function selectColor(evento) {
   for (let index = 0; index < cores.length; index += 1) {
@@ -29,19 +29,3 @@ function selectColor(evento) {
 for (let index = 0; index < cores.length; index += 1) {
   cores[index].addEventListener('click', selectColor);
 }
-
-function corClicadaNaPaleta(evento) {
-  const corSelected = document.querySelector('.selected').style.backgroundColor;
-  evento.target.style.backgroundColor = corSelected;
-}
-
-for (let index = 0; index < pixel.length; index += 1) {
-  pixel[index].addEventListener('click', corClicadaNaPaleta);
-}
-
-const button = document.querySelector('#clear-board');
-button.addEventListener('click', function () {
-  if (pixel.style.backgroundColor !== 'white') {
-    pixel[index].style.backgroundColor = 'white';
-  }
-});
