@@ -11,7 +11,7 @@ criandoFilho();
 
 const corPreta = document.getElementById('preto');
 
-window.onload = function () {
+window.onload = function AdicionaSelected() {
   corPreta.classList.remove('color');
   corPreta.classList.add('selected');
   corPreta.classList.add('color');
@@ -42,6 +42,6 @@ for (let index = 0; index < pixel.length; index += 1) {
 const button = document.querySelector('#clear-board');
 button.addEventListener('click', function () {
   if (pixel.style.backgroundColor !== 'white') {
-    pixel.style.backgroundColor = 'white';
+    pixel[index].style.backgroundColor = 'white';
   }
 });
