@@ -15,6 +15,7 @@ window.onload = function AdicionaSelected() {
 };
 
 const cores = document.querySelectorAll('.color');
+const pixel = document.querySelector('.pixel');
 
 function selectColor(evento) {
   for (let index = 0; index < cores.length; index += 1) {
@@ -24,4 +25,13 @@ function selectColor(evento) {
 }
 for (let index = 0; index < cores.length; index += 1) {
   cores[index].addEventListener('click', selectColor);
+}
+
+const botao = querySelector('.button');
+botao.addEventListener('click', limpaPixel);
+
+function limpaPixel() {
+  for(let index = 0; index< pixel.length; index +=1) {
+    pixel[index].style.backgroundColor = 'white';
+  }
 }
