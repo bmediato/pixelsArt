@@ -3,14 +3,9 @@
   padding: 0;
 }
 
-body {
-  background-image: url('http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/a0d92e1f337c491.png');
-}
-
 h1 {
   text-align: center;
   padding: 10px;
-  color: white;
 }
 
 #color-palette {

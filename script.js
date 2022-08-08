@@ -9,12 +9,9 @@ function criandoFilho() {
 }
 criandoFilho();
 
-const corPreta = document.getElementById('preto');
-
 window.onload = function AdicionaSelected() {
-  corPreta.classList.remove('color');
+  const corPreta = document.querySelector('.preto');
   corPreta.classList.add('selected');
-  corPreta.classList.add('color');
 };
 
 const cores = document.querySelectorAll('.color');
