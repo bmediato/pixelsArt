@@ -9,9 +9,7 @@ h1 {
 }
 
 #color-palette {
-  display: grid;
-  grid-template-columns: 1px 1px 1px 1px;
-  grid-column-gap: 50px;
+  display: flex;
   justify-content: center;
 }
 
@@ -20,6 +18,7 @@ h1 {
   padding: 15px;
   width: 10px;
   margin-top: 8px;
+  margin-right: 2px;
   margin-bottom: 8px;
 }
 
@@ -40,9 +39,11 @@ h1 {
 }
 
 #pixel-board {
-  display: grid;
-  grid-template-columns: 1px 1px 1px 1px 1px;
-  grid-column-gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 250px;
+  padding: 10px;
   justify-content: center;
 }
 
@@ -53,7 +54,7 @@ h1 {
   height: 40px;
 }
 
-#clear-board {
+#botao {
   display: flex;
   justify-content: center;
   margin: 10px;

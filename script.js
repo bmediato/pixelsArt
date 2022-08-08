@@ -15,7 +15,7 @@ window.onload = function AdicionaSelected() {
 };
 
 const cores = document.querySelectorAll('.color');
-const pixel = document.querySelector('#pixel-board');
+const pixel = document.getElementsByClassName('pixel');
 console.log(pixel);
 
 function selectColor(evento) {
@@ -30,28 +30,21 @@ for (let index = 0; index < cores.length; index += 1) {
 }
 function corClicadaNaPaleta(event) {
   let cor = event.target;
-  console.log(cor);
   let corClicada = window.getComputedStyle(cor).backgroundColor;
-  console.log(corClicada);
-  let corSelecionada = corClicada;
-  console.log(corSelecionada);
- 
+  return corSelecionada = corClicada;
 }
 
 for (let index = 0; index < pixel.length; index += 1) {
-  pixel[index].addEventListener('click', pixelCor)
-}
-
-function pixelCor (event) {
-  event.target.style.backgroundColor = corSelecionada;
+  pixel[index].addEventListener('click', function (event) {
+    event.target.style.backgroundColor = corSelecionada;
+  })
 }
 
 const botao = document.querySelector('#clear-board');
-
 function limpaPixel() {
   let pixel = document.querySelectorAll('.pixel');
-  for (let index of pixel) {
-    index.style.backgroundColor = 'white';
+  for (let index =0;index < pixel.length; index +=1) {
+    pixel[index].style.backgroundColor = 'white';
   }
 }
 botao.addEventListener('click', limpaPixel);
