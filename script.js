@@ -16,7 +16,6 @@ window.onload = function AdicionaSelected() {
 
 const cores = document.querySelectorAll('.color');
 const pixel = document.getElementsByClassName('pixel');
-console.log(pixel);
 
 function selectColor(evento) {
   for (let index = 0; index < cores.length; index += 1) {
@@ -43,7 +42,7 @@ for (let index = 0; index < pixel.length; index += 1) {
 const botao = document.querySelector('#clear-board');
 function limpaPixel() {
   let pixel = document.querySelectorAll('.pixel');
-  for (let index =0;index < pixel.length; index +=1) {
+  for (let index = 0; index < pixel.length; index += 1) {
     pixel[index].style.backgroundColor = 'white';
   }
 }
