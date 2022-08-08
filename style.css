@@ -60,7 +60,7 @@ h1 {
   margin: 10px;
 }
 
-.button {
+#clear-board {
   border: 3px solid #e7c6ff;
   padding: 5px 10px;
   color: black;
@@ -69,7 +69,7 @@ h1 {
 
 }
 
-.button:hover {
+#clear-board:hover {
   background-color: #e7c6ff;
   color: white;
 }
