@@ -27,7 +27,7 @@ for (let index = 0; index < cores.length; index += 1) {
   cores[index].addEventListener('click', selectColor);
 }
 
-const botao = querySelector('.button');
+const botao = document.querySelector('.button');
 botao.addEventListener('click', limpaPixel);
 
 function limpaPixel() {
