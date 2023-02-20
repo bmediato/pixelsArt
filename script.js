@@ -28,20 +28,20 @@ for (let index = 0; index < cores.length; index += 1) {
   cores[index].addEventListener('click', corClicadaNaPaleta);
 }
 function corClicadaNaPaleta(event) {
-  let cor = event.target;
-  let corClicada = window.getComputedStyle(cor).backgroundColor;
+  const cor = event.target;
+  const corClicada = window.getComputedStyle(cor).backgroundColor;
   return corSelecionada = corClicada;
 }
 
 for (let index = 0; index < pixel.length; index += 1) {
-  pixel[index].addEventListener('click', function (event) {
+  pixel[index].addEventListener('click', (event) => {
     event.target.style.backgroundColor = corSelecionada;
-  })
+  });
 }
 
 const botao = document.querySelector('#clear-board');
 function limpaPixel() {
-  let pixel = document.querySelectorAll('.pixel');
+  const pixel = document.querySelectorAll('.pixel');
   for (let index = 0; index < pixel.length; index += 1) {
     pixel[index].style.backgroundColor = 'white';
   }

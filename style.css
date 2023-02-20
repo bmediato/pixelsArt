@@ -3,9 +3,17 @@
   padding: 0;
 }
 
+body {
+  background-image: url('./pixel-art-mystical-background_52683-87349.avif');
+  background-repeat: no-repeat;
+  background-size: 1920px 1000px;
+}
+
 h1 {
   text-align: center;
   padding: 10px;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
 }
 
 #color-palette {
@@ -63,10 +71,11 @@ h1 {
 #clear-board {
   border: 3px solid #e7c6ff;
   padding: 5px 10px;
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #e7c6ff;
   font-size: 15px;
-
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 10px;
 }
 
 #clear-board:hover {
